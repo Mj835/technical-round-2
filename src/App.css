@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.buttons-container button {
+  width: 100px;
+  height: 30px;
+}
+
+.buttons-container input {
+  width: 200px;
+  height: 30px;
+}
+
+.box-container {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.box-dot {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border: none;
+}
+
+.response-column table {
+  width: 400px;
+  border: 1px solid black;
+}
+
+table td {
+  border-top: 1px solid black;
+  text-align: center;
+}
