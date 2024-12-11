@@ -37,7 +37,10 @@ function App() {
   };
 
   const handleStart = () => {
-    if (!timerSec) return;
+    if (!timerSec) {
+      alert("Please enter a number to Start");
+      return;
+    }
     inputCheck();
   };
 
@@ -68,18 +71,9 @@ function App() {
   return (
     <div className="App">
       <div className="buttons-container">
-        <button
-          disabled={!timerSec || timerSec < 1 || timerSec > 10 || isStarted}
-          onClick={handleStart}
-        >
-          Start
-        </button>
-        <button disabled={!isStarted} onClick={handlePause}>
-          Pause
-        </button>
-        <button disabled={!isStarted} onClick={handleReset}>
-          Reset
-        </button>
+        <button onClick={handleStart}>Start</button>
+        <button onClick={handlePause}>Pause</button>
+        <button onClick={handleReset}>Reset</button>
       </div>
 
       <div className="buttons-container">
